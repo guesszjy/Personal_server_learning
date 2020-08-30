@@ -1,10 +1,3 @@
-
-/*
- * Author: WangBoJing
- * email: 1989wangbojing@gmail.com 
- * github: https://github.com/wangbojing
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
