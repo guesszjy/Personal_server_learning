@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	./Makefile	/^BIN=client server$/;"	m
+CFLAGS	./Makefile	/^CFLAGS=-g -Wall$/;"	m
+CXX	./Makefile	/^CXX=g++$/;"	m
+EpollDemultiplexer	./epoll_demultiplexer.cpp	/^EpollDemultiplexer::EpollDemultiplexer()$/;"	f	class:EpollDemultiplexer
+EpollDemultiplexer	./epoll_demultiplexer.h	/^class EpollDemultiplexer : public EventDemultiplexer$/;"	c
+ErrorEvent	./event.h	/^    ErrorEvent   = 0x04,$/;"	e	enum:EventMask
+Event	./event.h	/^typedef unsigned int Event;$/;"	t
+EventDemultiplexer	./event_demultiplexer.h	/^    EventDemultiplexer() {}$/;"	f	class:EventDemultiplexer
+EventDemultiplexer	./event_demultiplexer.h	/^class EventDemultiplexer$/;"	c
+EventHandler	./event_handle.h	/^    EventHandler() {}$/;"	f	class:EventHandler
+EventHandler	./event_handle.h	/^class EventHandler$/;"	c
+EventMask	./event.h	/^    EventMask    = 0xff$/;"	e	enum:EventMask
+EventMask	./event.h	/^enum EventMask$/;"	g
+Handle	./event_handle.h	/^typedef int Handle;$/;"	t
+ListenHandle	./listen_handle.cpp	/^ListenHandle::ListenHandle( )$/;"	f	class:ListenHandle
+ListenHandle	./listen_handle.h	/^class ListenHandle : public EventHandler$/;"	c
+MAX_SIZE	./sock_handle.h	/^    static const int MAX_SIZE = 1024;$/;"	m	class:SockHandle
+OBJS	./Makefile	/^OBJS=reactor.o reactor_impl.o listen_handle.o sock_handle.o epoll_demultiplexer.o$/;"	m
+REACTOR_REACTOR_H_	./reactor.h	2;"	d
+Reactor	./reactor.cpp	/^Reactor::Reactor()$/;"	f	class:Reactor
+Reactor	./reactor.h	/^class Reactor$/;"	c
+ReactorImplementation	./reactor_impl.cpp	/^ReactorImplementation::ReactorImplementation()$/;"	f	class:ReactorImplementation
+ReactorImplementation	./reactor_impl.h	/^class ReactorImplementation$/;"	c
+ReadEvent	./event.h	/^    ReadEvent    = 0x01,$/;"	e	enum:EventMask
+SockHandle	./sock_handle.cpp	/^SockHandle::SockHandle( Handle fd )$/;"	f	class:SockHandle
+SockHandle	./sock_handle.h	/^class SockHandle : public EventHandler$/;"	c
+WriteEvent	./event.h	/^    WriteEvent   = 0x02,$/;"	e	enum:EventMask
+_REACTOR_EPOLL_H_	./epoll_demultiplexer.h	2;"	d
+_REACTOR_EVENTDEMULTIPLEXER_H_	./event_demultiplexer.h	2;"	d
+_REACTOR_EVENT_H_	./event.h	2;"	d
+_REACTOR_HANDLE_H_	./event_handle.h	2;"	d
+_REACTOR_LISTEN_HANDLE_H_	./listen_handle.h	2;"	d
+_REACTOR_SOCK_HANDLE_H_	./sock_handle.h	2;"	d
+_REACTPR_IMPL_H_	./reactor_impl.h	2;"	d
+buf	./sock_handle.h	/^    char* buf;$/;"	m	class:SockHandle
+demultiplexer	./reactor_impl.h	/^    EventDemultiplexer* demultiplexer;$/;"	m	class:ReactorImplementation
+epoll_fd	./epoll_demultiplexer.h	/^    int epoll_fd;$/;"	m	class:EpollDemultiplexer
+event_loop	./reactor.cpp	/^void Reactor::event_loop( int timeout )$/;"	f	class:Reactor
+event_loop	./reactor_impl.cpp	/^void ReactorImplementation::event_loop( int timeout )$/;"	f	class:ReactorImplementation
+evs	./epoll_demultiplexer.h	/^    std::vector<struct epoll_event> evs; $/;"	m	class:EpollDemultiplexer
+get_handle	./listen_handle.h	/^    virtual Handle get_handle() const { return listenfd; }$/;"	f	class:ListenHandle
+get_handle	./sock_handle.cpp	/^Handle SockHandle::get_handle() const$/;"	f	class:SockHandle
+get_instance	./reactor.cpp	/^Reactor& Reactor::get_instance()$/;"	f	class:Reactor
+handle_error	./listen_handle.cpp	/^void ListenHandle::handle_error()$/;"	f	class:ListenHandle
+handle_error	./sock_handle.cpp	/^void SockHandle::handle_error()$/;"	f	class:SockHandle
+handle_read	./listen_handle.cpp	/^void ListenHandle::handle_read()$/;"	f	class:ListenHandle
+handle_read	./sock_handle.cpp	/^void SockHandle::handle_read()$/;"	f	class:SockHandle
+handle_write	./listen_handle.h	/^    virtual void handle_write() {}$/;"	f	class:ListenHandle
+handle_write	./sock_handle.cpp	/^void SockHandle::handle_write()$/;"	f	class:SockHandle
+handlers	./reactor_impl.h	/^    std::map<Handle, EventHandler *>  handlers;    $/;"	m	class:ReactorImplementation
+impl	./reactor.h	/^    ReactorImplementation* impl;$/;"	m	class:Reactor
+iterator	./reactor_impl.h	/^    typedef std::map<Handle, EventHandler *>::iterator iterator;$/;"	t	class:ReactorImplementation
+listenOn	./listen_handle.cpp	/^bool ListenHandle::listenOn( int port ){$/;"	f	class:ListenHandle
+listenfd	./listen_handle.h	/^    Handle listenfd;$/;"	m	class:ListenHandle
+main	./client.cpp	/^int main( int argc, char **argv )$/;"	f
+main	./server.cpp	/^int main(int argc, char **argv)$/;"	f
+max_event	./epoll_demultiplexer.cpp	/^const int EpollDemultiplexer::max_event = 500;$/;"	m	class:EpollDemultiplexer	file:
+max_event	./epoll_demultiplexer.h	/^    static const int max_event;$/;"	m	class:EpollDemultiplexer
+reactor	./reactor.cpp	/^Reactor Reactor::reactor;$/;"	m	class:Reactor	file:
+reactor	./reactor.h	/^    static Reactor reactor;$/;"	m	class:Reactor
+regist	./epoll_demultiplexer.cpp	/^int EpollDemultiplexer::regist(EventHandler* handler, Event evt)$/;"	f	class:EpollDemultiplexer
+regist	./reactor.cpp	/^int Reactor::regist( EventHandler* handle, Event evt )$/;"	f	class:Reactor
+regist	./reactor_impl.cpp	/^int ReactorImplementation::regist( EventHandler* handler, Event evt )$/;"	f	class:ReactorImplementation
+remove	./epoll_demultiplexer.cpp	/^int EpollDemultiplexer::remove(Handle handle)$/;"	f	class:EpollDemultiplexer
+remove	./reactor.cpp	/^void Reactor::remove( EventHandler* handle )$/;"	f	class:Reactor
+remove	./reactor_impl.cpp	/^void ReactorImplementation::remove( EventHandler* handler )$/;"	f	class:ReactorImplementation
+setNonBlocking	./listen_handle.cpp	/^void ListenHandle::setNonBlocking( int fd){$/;"	f	class:ListenHandle
+sock_fd	./sock_handle.h	/^    Handle sock_fd;$/;"	m	class:SockHandle
+wait_event	./epoll_demultiplexer.cpp	/^int EpollDemultiplexer::wait_event(  std::map<Handle, EventHandler *>&  handlers,$/;"	f	class:EpollDemultiplexer
+~EpollDemultiplexer	./epoll_demultiplexer.cpp	/^EpollDemultiplexer::~EpollDemultiplexer()$/;"	f	class:EpollDemultiplexer
+~EventDemultiplexer	./event_demultiplexer.h	/^    virtual ~EventDemultiplexer() {}$/;"	f	class:EventDemultiplexer
+~EventHandler	./event_handle.h	/^    virtual ~EventHandler() {}$/;"	f	class:EventHandler
+~ListenHandle	./listen_handle.cpp	/^ListenHandle::~ListenHandle()$/;"	f	class:ListenHandle
+~Reactor	./reactor.cpp	/^Reactor::~Reactor()$/;"	f	class:Reactor
+~ReactorImplementation	./reactor_impl.cpp	/^ReactorImplementation::~ReactorImplementation()$/;"	f	class:ReactorImplementation
+~SockHandle	./sock_handle.cpp	/^SockHandle::~SockHandle()$/;"	f	class:SockHandle
